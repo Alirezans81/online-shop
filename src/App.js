@@ -1,5 +1,11 @@
+import Products from "./components/products";
+
 const App = () => {
-  return <h1>hello world!</h1>;
+  return (
+    <>
+      <Products />
+    </>
+  );
 };
 
 export default App;
