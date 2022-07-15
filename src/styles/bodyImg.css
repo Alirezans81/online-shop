@@ -1,0 +1,7 @@
+.body-img-div {
+  background: url(./logos/body.jpg);
+  background-size: cover;
+  background-position: center;
+  max-width: 100%;
+  flex-wrap: wrap;
+}
