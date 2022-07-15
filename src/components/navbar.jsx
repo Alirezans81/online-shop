@@ -16,7 +16,6 @@ const Navbar = () => {
         </div>
         <div className='nav-mid d-none d-sm-flex flex-column text-center justify-content-between align-items-center'>
           <div className='navbar-logo mt-2'></div>
-          {/* <img className='navbar-logo mt-1' src={require('../styles/logos/navbar.JPG')} alt="" /> */}
           <span className='title mt-1'>Tisa Bag</span>
         </div>
         <div className="nav-right d-flex align-items-center">
