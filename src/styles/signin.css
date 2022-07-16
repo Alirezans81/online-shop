@@ -22,12 +22,13 @@
   transition: all .5s;
   border-radius: 10px;
   box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.8);
-  color: rgba(0, 0, 0, 0.9);
+  color: rgba(255, 255, 255, 1);
 }
 
 .inputs:focus {
   background-color: white;
   box-shadow: 0px 0px 5px 3px rgba(255, 255, 255, 0.8);
+  color: rgba(0, 0, 0, 0.9);
 }
 
 .inputs::placeholder {
@@ -51,4 +52,9 @@
 
 .back-link:hover {
   color: rgba(255, 255, 255, 1);
+}
+
+.errors-list {
+  transition: all .5s;
+  color: rgba(255, 255, 255, 0.8);
 }

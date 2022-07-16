@@ -1,27 +1,16 @@
 import Product from "./product";
 
-const Home = () => {
+const Home = ({ productIds }) => {
   return (
     <>
       <div className="row px-5 py-4 w-100">
-        <div className="col-lg-4 col-md-6 col-sm-12 my-2">
-          <Product />
-        </div>
-        <div className="col-lg-4 col-md-6 col-sm-12 my-2">
-          <Product />
-        </div>
-        <div className="col-lg-4 col-md-6 col-sm-12 my-2">
-          <Product />
-        </div>
-        <div className="col-lg-4 col-md-6 col-sm-12 my-2">
-          <Product />
-        </div>
-        <div className="col-lg-4 col-md-6 col-sm-12 my-2">
-          <Product />
-        </div>
-        <div className="col-lg-4 col-md-6 col-sm-12 my-2">
-          <Product />
-        </div>
+        {productIds.map((productId) => {
+          return (
+            <div className="col-lg-4 col-md-6 col-sm-12 my-2">
+              <Product productId={productId} />
+            </div>
+          );
+        })}
       </div>
     </>
   );

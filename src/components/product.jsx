@@ -1,7 +1,9 @@
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 
-const Product = () => {
-  const [imgSrc, setImgSrc] = useState();
+const Product = ({ productId }) => {
+  const [imgSrc, setImgSrc] = useState("");
+  const [title, setTitle] = useState("👜😍کیف بالنسیاگا");
 
   return (
     <>
@@ -12,34 +14,16 @@ const Product = () => {
           alt="Card image cap"
         />
         <div className="card-body">
-          <h5 className="card-title text-center">👜😍کیف بالنسیاگا</h5>
-          <p className="card-text product-description">
-            مناسب مهمونی و استفاده روز مره در سه رنگ تابستونی خوشگل🌸🥰 رنگ
-            زنجیر ثابت میباشد و دارای ضمانت تعویض و برگشت میباشد
-          </p>
-          <ul className="product-description w-100">
-            <li className="w-100 d-flex justify-content-between align-items-center mr-2 mb-4">
-              <i className="fa-solid fa-check text-success"></i>
-              <span className="text-lighter-black">جنس چرم مصنوعی</span>
-            </li>
-            <li className="w-100 d-flex justify-content-between align-items-center mr-2 mb-4">
-              <i className="fa-solid fa-check text-success"></i>
-              <span className="text-lighter-black">سایز کیف ۱۵*۲۳ دارای بند بلند زنجیری</span>
-            </li>
-            <li className="w-100 d-flex justify-content-between align-items-center mr-2 mb-1">
-              <i className="fa-solid fa-check text-success"></i>
-              <span className="text-lighter-black">
-                عکس ژورنالی نداریم و تمامی عکس ها بدون ادیت و متعلق به پیج تیسا
-                بگ میباشد
-              </span>
-            </li>
-          </ul>
+          <h5 className="card-title text-center">{title}</h5>
           <span className="w-100 d-inline-block">
-            <div className="d-flex justify-content-between align-items-center">
+            <div className="d-flex justify-content-between align-items-center mt-4">
               <span>
-                <a href="#" className="btn btn-outline-success">
+                <NavLink
+                  className="btn btn-outline-success"
+                  to={"products/" + productId}
+                >
                   خرید
-                </a>
+                </NavLink>
               </span>
               <span className="product-price ml-5">قیمت کیف ۲۳۸ تومان</span>
             </div>

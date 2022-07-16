@@ -7,6 +7,7 @@ import "./styles/bodyImg.css";
 import "./styles/product.css";
 import "./styles/footer.css";
 import "./styles/signin.css";
+import "./styles/productPage.css";
 import { BrowserRouter } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
