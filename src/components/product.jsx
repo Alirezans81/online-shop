@@ -20,15 +20,15 @@ const Product = () => {
           <ul className="product-description w-100">
             <li className="w-100 d-flex justify-content-between align-items-center mr-2 mb-4">
               <i className="fa-solid fa-check text-success"></i>
-              <span>جنس چرم مصنوعی</span>
+              <span className="text-lighter-black">جنس چرم مصنوعی</span>
             </li>
             <li className="w-100 d-flex justify-content-between align-items-center mr-2 mb-4">
               <i className="fa-solid fa-check text-success"></i>
-              <span>سایز کیف ۱۵*۲۳ دارای بند بلند زنجیری</span>
+              <span className="text-lighter-black">سایز کیف ۱۵*۲۳ دارای بند بلند زنجیری</span>
             </li>
             <li className="w-100 d-flex justify-content-between align-items-center mr-2 mb-1">
               <i className="fa-solid fa-check text-success"></i>
-              <span>
+              <span className="text-lighter-black">
                 عکس ژورنالی نداریم و تمامی عکس ها بدون ادیت و متعلق به پیج تیسا
                 بگ میباشد
               </span>

@@ -2,9 +2,8 @@
   border-radius: 10px;
 }
 
-.product-img {
-  
-
+.text-lighter-black {
+  color: rgba(0, 0, 0, 0.7);;
 }
 
 .product-description {

@@ -5,6 +5,7 @@ import Navbar from "./components/navbar";
 import SignIn from "./components/signin";
 import SignUp from "./components/signup";
 import { useState } from "react";
+import Footer from "./components/footer";
 
 const App = () => {
   const [showNavbar, setShowNavbar] = useState(true);
@@ -33,6 +34,10 @@ const App = () => {
           <Route path="/" element={<Home />} />
         </Routes>
       </div>
+      <Routes>
+        <Route path="/categories" element={<Footer />} />
+        <Route path="/" element={<Footer />} />
+      </Routes>
     </>
   );
 };

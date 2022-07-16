@@ -1,0 +1,17 @@
+.instagram{
+  color: white;
+}
+
+.instagram-link {
+  transition: all .5s;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.instagram-link:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+.text-lighter {
+  color: rgba(255, 255, 255, .75);
+  text-align: right;
+}
